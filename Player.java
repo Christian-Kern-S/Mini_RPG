@@ -4,6 +4,7 @@ class Player{
   float posY;
   int lifePoint;
   String nome;
+  int dano;
 
   Player(String n, int ptsDeVida, float posInicialX, float posInicialY){
     System.out.println("Construtor do Player");
@@ -29,9 +30,14 @@ class Player{
     return posY;
   }
 
-  void receberDano(int dano){
+  void receberDanoP(int dano){
     lifePoint = lifePoint - dano;
       
+  }
+
+  int danoPlayer(int plus){
+    dano = dano + plus;
+    return dano;
   }
 
       String exibirStatus(){

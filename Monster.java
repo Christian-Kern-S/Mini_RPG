@@ -37,8 +37,9 @@ class Monster{
   String rugir(){
     return "akjdnakwjbawkbv";
   }
-  void receberDano(int dano){
+  void receberDanoM(int dano){
     pontosDeVida -= dano;
+    System.out.println("O monstro tomou dano");
     if(pontosDeVida <= 0){
       morrer();
     }

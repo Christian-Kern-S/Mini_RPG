@@ -6,10 +6,14 @@ class Main {
     String playerStatus = player1.exibirStatus();
     System.out.println(playerStatus);
 
-    Monster monster1 = new Monster("Godzilla",100,10,10);
+    Monster monster1 = new Monster("Godzilla",100,20,20);
 
     String monsterStatus = monster1.exibirStatus();
     System.out.println(monsterStatus);
+
+    
+
+    
 
     
 
